@@ -1,18 +1,22 @@
+/* Reset box-sizing for all elements */
 * {
   box-sizing: border-box;
 }
 
+/* Basic styling for the body */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
+/* Center the header and add margin */
 header {
   text-align: center;
   margin: 20px 0;
 }
 
+/* Container styling using flexbox */
 .container {
   width: 100%;
   max-width: 1200px;
@@ -22,6 +26,7 @@ header {
   flex-wrap: wrap;
 }
 
+/* Styling for each box (section) */
 .box {
   width: 32%;
   margin-bottom: 20px;
@@ -32,6 +37,7 @@ header {
   text-align: left;
 }
 
+/* Styling for section titles */
 .section-title {
   position: absolute;
   top: 0;
@@ -42,6 +48,7 @@ header {
   font-size: 1.25em;
 }
 
+/* Tablet view styling */
 @media (max-width: 991px) {
   .box {
     width: 48%;
@@ -51,8 +58,11 @@ header {
   }
 }
 
+/* Mobile view styling */
 @media (max-width: 767px) {
   .box {
     width: 100%;
   }
 }
+
+/* Author: Sebastian Valverde */
